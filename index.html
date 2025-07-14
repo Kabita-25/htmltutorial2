@@ -3,57 +3,99 @@
     <head>
         <title>MY second HTML tutorial</title>
         <meta charset ="UTF-8">
-        <meta name="viewport" content="width-device-width, intial scale=1.0">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="main.css" type="text/css">
         
     </head>
     <body>
-        <form action = "some.html" method="POST">
+        <header id="main-header">
+            <h1>A Web page</h1>
+        <nav>
+            <ul>
+                <li><a href = "#Dform">Form</a></li>
+                <li><a href="#heading1"> Heading</a></li>
+                <li><a href="#Olist">Ordered list</a></li>
+                <li><a href="#Ulist">Undordered List</a></li>
+                <li><a href="#Dlist">Description List</a></li>
+                <li><a href="#Abt">About Me</a></li>
+            </ul>
+
+        </nav>
+        </header>
+
+        <main>
+        
+   <section id ="Dform">
+        
+   <div>
+        <h2>Form</h2>
+        <form action = "about.html" method="POST">
+            <fieldset>
+                <legend>Personal information</legend>
             <div>
-            <label>Name</label>
-            <input type = "text" name="name">
+            <label for ="name">Name</label>
+            <input type = "text" name="name" id ="name" placeholder="Enter your name" required>
             </div>
-<br>
+            
+            <br>
+            
             <div>
-            <label> Age</label>
-            <input type = "number" name ="age">
+            <label for ="age"> Age</label>
+            <input type = "number" name ="age" id ="age" placeholder="Enter your age" required>
+            </div>
+
+        </fieldset>
+          
+        <br>
+        
+        <fieldset>
+            <legend> Extra information</legend>
+            
+            <div>
+            <label for="dob">Date of Birth </label>
+            <input type="date" name ="date" id ="dob"  required>
             </div>
             <br>
-            <div>
-            <label>Date of Birth </label>
-            <input type="Date" name ="date">
-</div>
-<br>
-<div>
-            <label>Phone Number</label>
-            <input type ="Number" name ="Pnumber">
-            </div>
-           
 
+            <div>
+            <label for="number">Phone Number</label>
+            <input type ="tel" name ="Pnumber" id="number" placeholder="Enter your number" required>
+            </div>
+        </fieldset>
+         <br>
+        <div>  
+            <input type ="submit" name="submit" value ="submit">
+         </div> 
           
         </form>
+</div>
+</section>
 
-        <h3>Heading 1</h3>
+        <section id="heading1">
+        <h2>Heading 1 </h2>
         <p>This is heading one.</p>
        <p>This is heading one answer</p>
-
+</section>
        <!--list--> 
 
-
-    <h2><u>Hobbies</u></h2>
+<section id ="Olist">
+    <h2>Hobbies</h2>
     <ol>
         <li>Music</li>
         <li>Dance</li>
         <li>Reading</li>
     </ol>
-
+</section>
+<section id = "Ulist">
     <h2>Hobbies</h2>
     <ul>
         <li>Music</li>
         <li>Dance</li>
-        <li><p>Reading</p></li>
+        <li>Reading</li>
     </ul>
 
+    </section>
+     <section id="Dlist">
     <h2>Description List</h2>
     <dl>
         <dt>Music</dt>
@@ -65,5 +107,24 @@
         <dt>Read</dt>
         <dd>I like to read every now and then</dd>
     </dl>
+    </section>
+
+    <section id="Abt">
+
+<h2><a href="about.html" >About Me</a></h2>
+</section>
+
+<section>
+    <h2>Images</h2>
+    <img src="images/image2.jpg.avif" alt="music icon" width="300" height="300">
+</section>
+    
+<p> 
+    <a href="#">Back to top</a>
+</p>
+</main>
+    <footer id="main-footer">
+        <p>&copy; <a href="about.html">Kabita Karki, </a> 2025</p>
+    </footer>
     </body>
 </html>
