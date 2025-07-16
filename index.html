@@ -10,12 +10,12 @@
     <body>
         <header id="main-header">
             <h1>A Web page</h1>
-        <nav>
+        <nav aria-label="primary-navigation">
             <ul>
                 <li><a href = "#Dform">Form</a></li>
                 <li><a href="#heading1"> Heading</a></li>
                 <li><a href="#Olist">Ordered list</a></li>
-                <li><a href="#Ulist">Undordered List</a></li>
+                <li><a href="#Ulist">Unordered List</a></li>
                 <li><a href="#Dlist">Description List</a></li>
                 <li><a href="#Abt">About Me</a></li>
             </ul>
@@ -71,22 +71,24 @@
 </div>
 </section>
 
-        <section id="heading1">
+        <article id="heading1">
         <h2>Heading 1 </h2>
         <p>This is heading one.</p>
+        
        <p>This is heading one answer</p>
-</section>
+        
+        </article>
        <!--list--> 
 
-<section id ="Olist">
+<article id ="Olist">
     <h2>Hobbies</h2>
     <ol>
         <li>Music</li>
         <li>Dance</li>
         <li>Reading</li>
     </ol>
-</section>
-<section id = "Ulist">
+</article>
+<article id = "Ulist">
     <h2>Hobbies</h2>
     <ul>
         <li>Music</li>
@@ -94,8 +96,8 @@
         <li>Reading</li>
     </ul>
 
-    </section>
-     <section id="Dlist">
+</article>
+     <article id="Dlist">
     <h2>Description List</h2>
     <dl>
         <dt>Music</dt>
@@ -107,16 +109,98 @@
         <dt>Read</dt>
         <dd>I like to read every now and then</dd>
     </dl>
-    </section>
+</article>
 
     <section id="Abt">
 
 <h2><a href="about.html" >About Me</a></h2>
 </section>
+<aside>
+    <details>
+        <summary>guess the number</summary>
+        <p>it is 10</p>
+    </details>
+</aside>
 
 <section>
     <h2>Images</h2>
-    <img src="images/image2.jpg.avif" alt="music icon" width="300" height="300">
+  <figure>
+    <img src="images/image2.jpg.avif" alt="music icon" width="300" height="300" title="Music image">
+     <figcaption> Music  </figcaption>
+     </figure>
+
+     <figure>
+        <img src="images/image3.webp" alt="dance icon" width="300" height="300" title="Dance image">
+        <figcaption> Dance</figcaption>
+     </figure>
+</section>
+
+<section>
+    <h2>Table</h2>
+    <table>
+        <caption> My Interests</caption>
+        <thead>
+            <tr>
+                <th scope="col">S.N</th>
+                <th scope="col">Interest</th>
+                <th scope="col">Hobby</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <th scope="row">1.</th>
+
+                <td>Music</td>
+                <td>Reading</td>
+               
+            </tr>
+            <tr>
+                <th scope="row">2.</th>
+                
+                <td>Playing</td>
+                <td>Dancing</td>
+            </tr>
+
+            <tr>
+
+                <th rowspan="2" scope="row">Free time</th>
+                <td>sleep</td>
+                <td>read</td>
+               
+            </tr>
+            <tr>
+                <td>read</td>
+                <td>study</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">
+                    This is all of my interests and hobbies.
+                
+                </td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    <table>
+        <thead>
+        <tr>
+            <td> <time datetime="10:00">10 am
+            11:am</time></td>
+            <td> Study</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td> <time datetime="11:00">11 am </time>
+            </td>
+            <td> Play</td>
+        </tr>
+        </tbody>
+    </table>
 </section>
     
 <p> 
