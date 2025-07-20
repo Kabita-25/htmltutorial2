@@ -18,6 +18,7 @@
                 <li><a href="#Ulist">Unordered List</a></li>
                 <li><a href="#Dlist">Description List</a></li>
                 <li><a href="#Abt">About Me</a></li>
+                <li><a href="#Contact">Contact me</a></li>
             </ul>
 
         </nav>
@@ -29,12 +30,12 @@
         
    <div>
         <h2>Form</h2>
-        <form action = "about.html" method="POST">
+        <form action = "https://httpbin.org/post" method="post">
             <fieldset>
                 <legend>Personal information</legend>
             <div>
             <label for ="name">Name</label>
-            <input type = "text" name="name" id ="name" placeholder="Enter your name" required>
+            <input type = "text" name="name" id ="name" placeholder="Enter your name" required autofocus>
             </div>
             
             <br>
@@ -202,7 +203,105 @@
         </tbody>
     </table>
 </section>
+
+<article id="Contact">
+    <h2>Contact Me</h2>
+    <p>I would like to hear from you</p>
+    <form action = "about.html" method="get">
+        <fieldset>
+            <legend>Personal information</legend>
+        <p>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter first name" autocomplete="on" required>
+        </p>
+        <p>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter last name" required autocomplete="on">
+        </p>
+        <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        </p>
+         
+        <p>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required>
+        </p>
+
+        <p>
+            <label for="decade">Favourite Decade</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2025" step="5" value="1990">
+        </p>
+
+        <p>
+            <label for="rides">Choose your ride</label>
+            <select name="rides" id="rides" multiple size="3">
+                <optgroup label="Four Wheeler" >
+                <option value="Car">Car</option>
+                <option value="Jeep" selected>Jeep</option>
+                </optgroup>
+                <optgroup label="Two Wheeler">
+                <option value="bike" >Bike</option>
+                <option value="Cycle">Cycle</option>
+                </optgroup>
+
+                <option value="Other">Other</option>
+
+
+            </select>
+        </p>
+
+        <!-- <p>
+            <label for="rides">Choose your ride</label>
+            <input type="text" name="rides" id="rides" list="ride-list">
+            <datalist id="ride-list">
+                <option value="Car">
+                <option value="Jeep">
+                <option value="bike" >
+                <option value="Cycle">
+              <option value="Other">
+
+
+            </datalist>
+        </p> -->
+</fieldset>
+<br>
+<fieldset>
+    <legend>Favourite food</legend>
+    <p>
+    <input type="radio" name="food" id="momo" value="momo">
+    <label for="momo">Momo</label>
+    </p>
+    <p>
+<input type="radio" name="food" id="pizza" value="pizza">
+<label for="pizza">Pizza</label>
+</p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Do you have pets?</legend>
+    <p>
+    <input type="checkbox" name="pets" id="dog" value="dog" >
+    <label for="dog">Dog</label>
+</p>
+<p>
+    <input type="checkbox" name="pets" id="cat" value="cat">
+    <label for="cat">Cat</label>
+</p>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Send me a message</legend>
+    <label for="message">Your message:</label>
+    <textarea name="message" id="message" placeholder="type your message here" cols="30" rows="10"></textarea>
     
+</fieldset>
+<br>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+    </form>
+</article>
+
 <p> 
     <a href="#">Back to top</a>
 </p>
